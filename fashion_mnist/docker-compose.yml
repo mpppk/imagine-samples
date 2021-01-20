@@ -1,0 +1,14 @@
+version: "3"
+services:
+  downloader:
+    container_name: fashion-mnist-downloader
+    build: ./
+    volumes:
+      - ./dataset/train:/train
+      - ./dataset/test:/test
+  converter:
+    container_name: predict_result_coverter
+    build: ./
+    volumes:
+      - .:/app
+    entrypoint: python /app/convert_incorrect_predicts.py /app/incorrect_predicts.csv
