@@ -1,16 +1,22 @@
+# fashion mnist example
+
+This tutorial shows how you can check, annotate, and analyze images on [imagine-app](https://github.com/mpppk/imagine) by using fashion-mnist dataset as an example.
+
 ## Prerequisites
 
-- install [imagine-app](https://github.com/mpppk/imagine)
-- install [imagine-utl](https://github.com/mpppk/imagine-utl)
+- Install [imagine-app](https://github.com/mpppk/imagine)
+- Install [imagine-utl](https://github.com/mpppk/imagine-utl)
 
 ## Setup
 
 ```shell
 $ git clone https://github.com/mpppk/imagine-samples
-$ cd fashion_mnist
+$ cd imagine-samples/fashion_mnist
 ```
 
-## Download dataset
+## Download fashion-mnist dataset
+
+First you should download fashion-mnist dataset. This repository provides multiple way so you can select the one you like.
 
 ### Python
 
@@ -77,7 +83,7 @@ $ tree -L 2 dataset
     └── Trouser
 ```
 
-You can import tags from directory name by using imagine-utl command. It print asset and tag information to stdout.
+You can import tags from directory name by using imagine-utl command. It print image and tag information to stdout.
 
 ```shell
 $ imagine-utl load --dir dataset --depth 2 | head -n 2
@@ -115,7 +121,7 @@ $ imagine --db db.imagine asset list --format csv | head -n 2
 "1","test/Bag/0.png","test,Bag"
 ```
 
-## Update meta data
+## Update metadata
 
 Suppose a situation where you want to check the inference result of the created machine learning model on imagine-app. `incorrect_predicts.csv` contains incorrect inference results, like below.
 
