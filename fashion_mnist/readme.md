@@ -1,6 +1,6 @@
 # fashion mnist example
 
-This tutorial shows how you can check, annotate, and analyze images on [imagine-app](https://github.com/mpppk/imagine) by using fashion-mnist dataset as an example.
+This tutorial shows how you can check, annotate, and analyze images on [imagine-app](https://github.com/mpppk/imagine) by using [fashion-mnist](https://github.com/zalandoresearch/fashion-mnist) dataset as an example.
 
 ## Prerequisites
 
