@@ -11,4 +11,4 @@ services:
     build: ./
     volumes:
       - .:/app
-    entrypoint: python /app/convert_incorrect_predicts.py /app/incorrect_predicts.csv
+    entrypoint: python /app/convert_incorrect_predicts.py /app/incorrect_predicts.csv /app/converted_incorrect_results.jsonl
